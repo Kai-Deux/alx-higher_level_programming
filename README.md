@@ -1,4 +1,4 @@
 # PROJECTS
-1. 0x00. Python - Hello, World
+0. 0x00. Python - Hello, World
 1. 0x01. Python - if/else, loops, functions
-0x02. Python - import & modules
+2. 0x02. Python - import & modules
