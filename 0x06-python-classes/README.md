@@ -1,2 +1,2 @@
 # TASKS
-- Write an empty class  that defines a square
+- Write an empty class  that defines a ``square``
