@@ -1,5 +1,12 @@
 # PROJECTS 
 
-0x05. Python - Exceptions
-0x06-python-classes
-7. 0x07. Python - Test-driven development
+- Project: 0X00. PYTHON - HELLO WORLD
+- Project: 0X01. PYTHON - IF ELSE LOOPS FUNCTIONS
+- Project: 0x02. PYTHON - IMPORT MODULES
+- Project: 0x03. PYTHON - DATA STRUCTURES
+- Project: 0x04. PYTHON - MORE DATA STRUCTURES
+- Project: 0x05. PYTHON - EXCEPTIONS
+- Project: 0x06. PYTHON - CLASSES
+- Project: 0x07. PYTHON - TEST DRIVEN DEVELOPMENT
+
+
