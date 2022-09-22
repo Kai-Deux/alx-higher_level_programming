@@ -100,7 +100,24 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 
 ## Pycodestyle
-[new standard of Python style code](https://alx-intranet.hbtn.io/rltoken/UQ25jC6sA5XqZl6ZZIdAaw)
+`Pycodestyle` is now the [new standard of Python style code](https://alx-intranet.hbtn.io/rltoken/UQ25jC6sA5XqZl6ZZIdAaw)
 
 <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/231/Flyingcircus_2.jpg" alt="Alt text" title="Optional title">
+
+# TASKS
+
+0.  Run Python file
+  - Write a Shell script that runs a Python script.
+  - The Python file name will be saved in the environment variable ``$PYFILE``
+  ``` 
+guillaume@ubuntu:~/py/0x00$ cat main.py 
+#!/usr/bin/python3
+print("Best School")
+
+guillaume@ubuntu:~/py/0x00$ export PYFILE=main.py
+guillaume@ubuntu:~/py/0x00$ ./0-run
+Best School
+guillaume@ubuntu:~/py/0x00$ 
+```
+1. Run Inline
 
