@@ -29,7 +29,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 - Where does the name ‘Python’ come from
 - What is the Zen of Python
 - How to use the Python interpreter
-- How to print text and variables using <p style='color:red'>print</p>
+- How to print text and variables using `#FF0000` print
 - How to use strings
 - What are indexing and slicing in Python
 - What is the official Python coding style and how to check your code with <p style='color:red'>pycodestyle</p>
