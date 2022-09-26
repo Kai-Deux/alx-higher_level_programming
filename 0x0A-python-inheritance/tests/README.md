@@ -1,1 +1,1 @@
-tets
+# Python - Inheritance
