@@ -27,3 +27,4 @@ Project done during **Full Stack Software Engineering studies** at **ALX School*
 | `101-stats.py` | Function that reads `stdin` line by line and computes metrics |
 | `read_write_heap.py` | Script that finds in the heap of a running process, and replaces it |
 task 7 exe
+ ex
