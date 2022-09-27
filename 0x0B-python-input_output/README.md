@@ -26,3 +26,4 @@ Project done during **Full Stack Software Engineering studies** at **ALX School*
 | `100-append_after.py` | Function that inserts a line of text to a file, after each line containing a specific string |
 | `101-stats.py` | Function that reads `stdin` line by line and computes metrics |
 | `read_write_heap.py` | Script that finds in the heap of a running process, and replaces it |
+task 7 exe
