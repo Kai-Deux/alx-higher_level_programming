@@ -1,63 +1,50 @@
 #!/usr/bin/python3
-
-"""A module for Square class"""
-
+""" New class Square """
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
-    """A Square class"""
+    """ Class Square that inherist from Rectangle """
 
     def __init__(self, size, x=0, y=0, id=None):
-        """Initialize square class"""
-        self.size = size
+        """ Class constructor """
         super().__init__(size, size, x, y, id)
+        self.size = size
 
+    """ Returns printable string representation
+    of an instance """
+    def __str__(self):
+        return ("[{}] ({}) {:d}/{:d} - {:d}".format(
+            self.__class__.__name__, self.id, self.x,
+            self.y, self.size))
+
+    """ Size getter and setter """
     @property
     def size(self):
-        """To retrieve size"""
-        return self.__width
+        return (self.width)
 
     @size.setter
-    def size(self, size):
-        """To set size"""
-        if type(size) != int:
-            raise TypeError("width must be an integer")
-        if size <= 0:
-            raise ValueError("width must be > 0")
-        self.__width = size
-        self.__height = size
-
-    def __str__(self):
-        """Creates a string object from a given object"""
-        end_string = "[Square] "
-        end_string += "({}) ".format(self.id)
-        end_string += "{:d}/{:d} - ".format(self.x, self.y)
-        end_string += "{:d}".format(self.size)
-        return end_string
+    def size(self, value):
+        self.width = value
+        self.height = value
 
     def update(self, *args, **kwargs):
-        """Assigns a key/value argument to each attribute"""
-        try:
-            self.id = args[0]
-            self.size = args[1]
-            self.x = args[2]
-            self.y = args[3]
-        except IndexError:
-            pass
+        """ This method assigns an argument to each attribute """
+        if args:
+            for argmts in range(len(args)):
+                if argmts == 0:
+                    self.id = args[argmts]
+                if argmts == 1:
+                    self.size = args[argmts]
+                if argmts == 2:
+                    self.x = args[argmts]
+                if argmts == 3:
+                    self.y = args[argmts]
 
-        if "id" in kwargs:
-            self.id = kwargs["id"]
-
-        if "size" in kwargs:
-            self.size = kwargs["size"]
-
-        if "x" in kwargs:
-            self.x = kwargs["x"]
-
-        if "y" in kwargs:
-            self.y = kwargs["y"]
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def to_dictionary(self):
-        """Creates string object from a given object"""
-        return {"id": self.id, "size": self.size, "x": self.x, "y": self.y}
+        """ Returns the dictionary representation of a Rectangle"""
+        return ({'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y})
